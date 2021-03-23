@@ -1,0 +1,16 @@
+[package]
+name = "dreammaker-ffi"
+version = "0.1.0"
+authors = ["Karolis2011 <Karolis2011@users.noreply.github.com>"]
+edition = "2018"
+
+
+[lib]
+name = "dreammaker"
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
+libc = "*"
+dreammaker = { git = "https://github.com/SpaceManiac/SpacemanDMM.git" }
+serde_json = "1.0.64"
+serde = "1.0.125"
